@@ -35,16 +35,90 @@
     <div id="info">
     <section id="introduction">
         <h2 class="fade-in-text">Transformando Watts em Vitória</h2>
-        <h1 class="fade-in-text">Em Alta <br>Voltagem</h1>
+        <div id="phrase">
+            <h1 class="fade-in-text">Em Alta</h1>
+            <h2 class="fade-in-text" style="color: #1391D9;">Voltagem</h1>
+        </div>
         <p class="fade-in-text">Na vanguarda da corrida pela inovação elétrica, a <br> Formula E impulsiona o conhecimento. 
             Tecnologia de ponta <br> e pesquisa contínua expandem nossa compreensão sobre veículos elétricos, <br>
             oferecendo uma plataforma dinâmica de aprendizado em mobilidade sustentável.</p>
     </section>
     </div>
     <div id="divisor">
-        <h2 id="topic">Pilotos</h2>
+        <h2 class="fade-in-text">Pilotos</h2>
     </div>
     <div id="banner"></div>
-<footer></footer>
+    <div class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="./assets/pilots/Jean-Éric Vergne.png" alt="Jean-Éric Vergne">
+                <h1 class="names">Jean-Éric Vergne</h1>
+                <div class="details">
+                    <h2>Jean-Éric Vergne</h2>
+                    <img src="./assets/countries/França.jpg" alt="France">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./assets/pilots/Lucas Di Grassi.png" alt="Lucas Di Grassi">
+                <h1 class="names">Lucas Di Grassi</h1>
+                <div class="details">
+                    <h2>Lucas Di Grassi</h2>
+                    <img src="./assets/countries/Brasil.jpg" alt="Brazil">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./assets/pilots/Sérgio Sette Câmara.png" alt="Sérgio Sette Câmara">
+                <h1 class="names">Sérgio Sette Câmara</h1>
+                <div class="details">
+                    <h2>Sérgio Sette Câmara</h2>
+                    <img src="./assets/countries/Brasil.jpg" alt="Brazil">
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="./assets/pilots/Norman Nato.png" alt="Norman Nato">
+                <h1 class="names">Norman Nato</h1>
+                <div class="details">
+                    <h2>Norman Nato</h2>
+                    <img src="./assets/countries/França.jpg" alt="France">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./assets/pilots/Sam Bird.png" alt="Sam Bird">
+                <h1 class="names">Sam Bird</h1>
+                <div class="details">
+                    <h2>Sam Bird</h2>
+                    <img src="./assets/countries/Reino Unido.jpg" alt="United Kingdom">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./assets/pilots/Sébastien Buemi.png" alt="Sébastien Buemi">
+                <h1 class="names">Sébastien Buemi</h1>
+                <div class="details">
+                    <h2>Sébastien Buemi</h2>
+                    <img src="./assets/countries/Suiça.jpg" alt="Switzerland">
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./assets/pilots/Maximilian Günther.png" alt="Maximilian Günther">
+                <h1 class="names">Maximilian Günther</h1>
+                <div class="details">
+                    <h2>Maximilian Günther</h2>
+                    <img src="./assets/countries/Alemanha.jpg" alt="Germany">
+                </div>
+            </div>
+        </div>
+
+<footer> 
+    &copy; 2024 Todos os direitos reservados.
+</footer>
+<script src="./assets/script/script.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+      $(".slider-img").on("click", function () {
+        $(".slider-img").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
 </body>
 </html>
