@@ -265,9 +265,9 @@ body {
 
 footer{
     position: absolute;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--base-color2);
     color: var(--text-color);
     font-size: 2rem;
