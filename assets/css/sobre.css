@@ -7,6 +7,7 @@
 :root {
     --base-color: #161515;
     --base-color2: #1391D9;
+    --grid-color: #3F7085;
     --text-color: #fff;
 }
 
@@ -106,32 +107,32 @@ h1{
     color: var(--text-color);
 }
 
-#FormulaEText p{
+#formula-text p{
     margin-top: 60px;
     margin-left: 227px;
     color: var(--text-color);
     font-size: 40px;
 }
 
-#FormulaEText h5{
+#formula-text h5{
     text-align: center;
     color: var(--text-color);
     font-size: 40px;
 }
 
-#Challenge img{
+#challenge img{
     width: 100vh;
     margin-top: 5%;
     margin-left: 120px;
 }
 
-#Challenge h1{
+#challenge h1{
     font-size: 64px;
     margin-top: -550px;
     margin-left: 60%;
 }
 
-#Challenge p{
+#challenge p{
     max-width: 605px;
     margin-top: -25%;
     margin-left: 60%;
@@ -139,24 +140,87 @@ h1{
     font-size: 40px;
 }
 
-#Solution img{
+#solution img{
     width: 100vh;
     margin-top: 12%;
     margin-left: 42%;
 }
 
-#Solution h1{
+#solution h1{
     font-size: 64px;
     margin-top: -550px;
     margin-left: 120px;
 }
 
-#Solution p{
+#solution p{
     max-width: 605px;
     margin-top: -25%;
     margin-left: 120px;
     color: var(--text-color);
     font-size: 40px;
+}
+
+h2{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 120px;
+    font-size: 64px;
+    color: var(--text-color);
+}
+
+h2:after {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 50px;
+	background: #fff;
+	margin-top: -65px;
+    margin-left: -10px;
+    border-radius: 5px;
+}
+
+#custom-space{
+    margin-top: 200px;
+}
+#background{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    background-color: var(--base-color2);
+    width: 100%;
+    height: 130vh;
+}
+
+#grid {
+    margin-left: 110px;
+    margin-top: 20px;
+    width: 88%;
+    height: auto;
+    border-radius: 20px;
+    background-color: var(--grid-color);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#grid h3{
+    color: var(--text-color);
+    font-size: 50px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+#grid p{
+    color: var(--text-color);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#grid:hover {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
 }
 
 footer{
