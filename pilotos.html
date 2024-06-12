@@ -19,28 +19,33 @@
         </div>
     </header>
     <div class="container">
-        <h1>Sam Bird</h1>
+        <h1 id="pilot-name">Sam Bird</h1>
         <div class="dot"></div>
-        <h2>8</h2>
+        <h2 id="pilot-number" style="color: #BA793E;">8</h2> <!-- Cor inicial para Sam Bird -->
+        <div id="favorite-star" class="star" onclick="toggleFavorite()">
+            <i class="fa fa-star"></i>
+        </div>
     </div>
-    <h5><span>SAM</span>BIRD</h5>
+    <h5>Formula E</h5>
     <img src="./assets/pilots-no-bg/Sam_Bird-removebg-preview.png" class="driver" alt="Sam Bird">
-    <section class="driver-info">
+    <section class="driver-info" style="background: linear-gradient(to right, #BA793E 33%, #CBA481 88%);"> <!-- Background inicial para Sam Bird -->
         <div class="vitorias">
             <div>Vitórias</div>
-            <h3>12</h3>
+            <h3 id="vitorias">12</h3>
         </div>
         <div>
             <div>Pódios</div>
-            <h3>27</h3>
+            <h3 id="podios">27</h3>
         </div>
         <div class="divider"></div>
         <div>
             <div>Classificação</div>
-            <h3>10th</h3>
+            <h3 id="classificacao">10th</h3>
         </div>
-        <img src="./assets/pilots-no-bg/Neon_Mclaren.png" class="team">
+        <img src="./assets/pilots-no-bg/Neon_Mclaren.png" class="team" id="team-image">
     </section>
-<script src="./assets/script/favorite.js"></script>
+    <button class="button-change-pilot" onclick="changePilot()"><i class="fa fa-chevron-right"></i></button>
+    <script src="./assets/script/favorite.js"></script>
+    <script src="./assets/script/driver.js"></script>
 </body>
 </html>

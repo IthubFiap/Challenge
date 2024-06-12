@@ -10,6 +10,21 @@
     --base-color2: #1391D9;
     --base-color3:#E4DFD6;
     --text-color: #fff;
+    --sam-bird-color: #BA793E;
+    --norman-nato-color: #DE3530; 
+    --maximilian-gunther:#254979;
+    --jean-eric-vergne:#DEB732;
+    --sebastien-buemi:#41BF5D;
+    --lucas-di-grassi:#4082BA;
+    --sergio-sette-camara:#64615C;
+    --sam-bird-bg: linear-gradient(to right, #BA793E 33%, #CBA481 88%);
+    --norman-nato-bg: linear-gradient(to right, #91111A 33%, #C94C58 88%);
+    --maximilian-gunther-bg: linear-gradient(to right, #2C3497 33%, #5A6BD6 88%);
+    --jean-eric-vergne-bg: linear-gradient(to right, #DEB732 33%, #E1C945 88%);
+    --sebastien-buemi-bg: linear-gradient(to right, #41BF5D 33%, #A6EEA6 88%);
+    --lucas-di-grassi-bg: linear-gradient(to right, #4082BA 33%, #3FBAC2 88%);
+    --sergio-sette-camara-bg: linear-gradient(to right, #64615C 33%, #E5E0D5 88%);
+
 }
 
 html {
@@ -147,15 +162,15 @@ h2{
 h5 {
     opacity: 0.7;
     text-transform: uppercase;
-    font-size: 180px; /* Tamanho da fonte */
+    font-size: 200px; /* Tamanho da fonte */
     color: var(--text-color);
-    margin-top: 250px; /* Espaçamento superior */
+    margin-top: 50px; /* Espaçamento superior */
     text-align: center; /* Alinhamento do texto */
-    letter-spacing: 10px; /* Aumenta o espaço entre as letras */
+    letter-spacing: 25px; /* Aumenta o espaço entre as letras */
 }
 
 span {
-    margin-right: 380px;
+    margin-right: 250px;
 }
 
 .driver {
@@ -211,5 +226,29 @@ span {
 .team {
     max-width: 50%;
     max-height: 50%;
-   margin-top: -70px;
+    min-height: 200px;
+    min-width: 200px;
 }
+
+/* Estilo do botão de troca de piloto */
+.button-change-pilot {
+    position: absolute;
+    top: 50%; /* Alinhamento vertical no meio da página */
+    right: 10px; /* Espaçamento da borda direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    background-color: var(--base-color);
+    color: var(--base-color2);
+    border: none; /* Remove a borda padrão */
+    padding: 26px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor em formato de mão ao passar o mouse */
+    font-size: 32px; /* Tamanho da fonte */
+    display: flex; /* Flexbox para centralizar a seta */
+    justify-content: center; /* Centraliza horizontalmente a seta */
+    align-items: center; /* Centraliza verticalmente a seta */
+    transition: transform 0.2s ease; /* Animação suave ao passar o mouse */
+}
+
+.button-change-pilot:hover {
+    transform: translateY(-50%) scale(1.1); /* Aumenta um pouco o tamanho do botão no hover */
+}
+
