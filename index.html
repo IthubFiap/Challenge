@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula E</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Teko&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="./assets/img/FormulaE.png" alt="Formula E">
+        <!-- User Navigation -->
+        <div id="menu">
+            <img src="./assets/img/FormulaE.png" id="logo" alt="Formula E">
+            <img src="./assets/img/Perfil.png" id="perfil" alt="Perfil">
         </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">SignUp</a></li>
-            </ul>
-        </nav>
-        <div id="perfil">
-            <img src="./assets/img/Perfil.png" alt="Perfil">
-        </div>
+        <!-- Main Navigation -->
         <nav id="main-menu">
             <ul>
                 <li><a href="sobre.html" class="fade-in-text">Sobre</a></li>
-                <li><a href="#" class="fade-in-text">Live</a></li>
-                <li><a href="#" class="fade-in-text">Games</a></li>
+                <li><a href="#" class="fade-in-text">Pilotos</a></li>
+                <li><a href="#" class="fade-in-text">Login</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Icon Section -->
     <div id="icon">
         <img src="./assets/img/Icon.png" alt="Icon" class="fade-in-text">
     </div>
+
+    <!-- Information Section -->
     <div id="info">
-    <section id="introduction">
-        <h2 class="fade-in-text">Transformando Watts em Vitória</h2>
-        <div id="phrase">
-            <h1 class="fade-in-text">Em Alta</h1>
-            <h2 class="fade-in-text" style="color: #1391D9;">Voltagem</h1>
-        </div>
-        <p class="fade-in-text">Na vanguarda da corrida pela inovação elétrica, a <br> Formula E impulsiona o conhecimento. 
-            Tecnologia de ponta <br> e pesquisa contínua expandem nossa compreensão sobre veículos elétricos, <br>
-            oferecendo uma plataforma dinâmica de aprendizado em mobilidade sustentável.</p>
-    </section>
+        <section id="introduction">
+            <h2 class="fade-in-text">Transformando Watts em Vitória</h2>
+            <div id="phrase">
+                <h1 class="fade-in-text">Em Alta</h1>
+                <h2 class="fade-in-text" style="color: #1391D9;">Voltagem</h2>
+            </div>
+            <p class="fade-in-text">
+                Na vanguarda da corrida pela inovação elétrica, a Formula E impulsiona o conhecimento. 
+                Tecnologia de ponta e pesquisa contínua expandem nossa compreensão sobre veículos elétricos, 
+                oferecendo uma plataforma dinâmica de aprendizado em mobilidade sustentável.
+            </p>
+        </section>
     </div>
+
+    <!-- Divisor Section -->
     <div id="divisor">
         <h2 class="fade-in-text">Pilotos</h2>
     </div>
+
+    <!-- Banner Section -->
     <div id="banner"></div>
+
+    <!-- Slider Section -->
     <div class="slider-container">
         <div class="slider-images">
+            <!-- Slider Image Items -->
             <div class="slider-img">
                 <img src="./assets/pilots/Jean-Éric Vergne.png" alt="Jean-Éric Vergne">
                 <h1 class="names">Jean-Éric Vergne</h1>
@@ -107,18 +116,22 @@
                 </div>
             </div>
         </div>
+    </div>
 
-<footer> 
-    &copy; 2024 Todos os direitos reservados.
-</footer>
-<script src="./assets/script/script.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-      $(".slider-img").on("click", function () {
-        $(".slider-img").removeClass("active");
-        $(this).addClass("active");
-      });
-    });
-  </script>
+    <!-- Footer Section -->
+    <footer> 
+        <h5>&copy; 2024 Todos os direitos reservados.</h5>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/script/script.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
 </body>
 </html>
