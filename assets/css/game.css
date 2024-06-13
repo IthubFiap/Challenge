@@ -5,181 +5,220 @@
     box-sizing: border-box;
 }
 
+/* Root variables for color scheme */
 :root {
-    --base-color: #161515;
-    --base-color2: #1391D9;
-    --base-color3: #3F7085;
-    --text-color: #fff;
+    --base-color: #161515;        /* Base color */
+    --base-color2: #1391D9;       /* Secondary base color */
+    --base-color3: #3F7085;       /* Tertiary base color */
+    --text-color: #fff;           /* Text color */
 }
 
+/* Base font settings */
 html {
-    font-size: 16px;
+    font-size: 16px;              /* Base font size */
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
 
+/* Body styles */
 body {
-    font-family: "Teko", Arial, sans-serif;
-    background: linear-gradient(to bottom, var(--base-color), rgba(22, 21, 21, 1));
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    font-family: "Teko", Arial, sans-serif; /* Font family */
+    background: linear-gradient(to bottom, var(--base-color), rgba(22, 21, 21, 1)); /* Background gradient */
+    color: var(--text-color);     /* Text color */
+    display: flex;                /* Flex container */
+    flex-direction: column;       /* Vertical stacking of flex items */
+    align-items: center;          /* Center align items horizontally */
+    min-height: 100vh;            /* Minimum height to cover viewport */
+    margin: 0;                    /* Remove default margin */
 }
 
+/* Header section */
 header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: var(--base-color2);
+    width: 100%;                  /* Full width */
+    padding: 20px 0;              /* Padding top and bottom */
+    background-color: var(--base-color2); /* Background color */
 }
 
+/* Header container styles */
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;                /* Defines as a flex container */
+    justify-content: flex-start;  /* Aligns items at the start of the container (left) */
+    align-items: center;          /* Centers items vertically */
+    height: 3vh;                  /* Height of the container */
 }
 
-.header-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    background-color: var(--base-color2);
-    height: 3vh;
-}
-
+/* Styles for header links */
 .header-container a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    gap: 10px;
-    margin-top: 30px;
-    list-style: none;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    display: flex;                /* Flex container */
+    align-items: center;          /* Center align items vertically */
+    justify-content: flex-start;  /* Align items to start */
+    position: relative;           /* Relative positioning */
+    margin-left: 20px;            /* Left margin */
+    margin-bottom: 20px;          /* Bottom margin */
+    gap: 10px;                    /* Gap between icon and text */
+    margin-top: 30px;             /* Top margin */
+    list-style: none;             /* Remove list styling */
+    color: var(--text-color);     /* Text color */
+    font-size: 1.5rem;            /* Font size */
+    text-decoration: none;        /* Remove underline */
+    font-weight: bold;            /* Bold font weight */
+    text-transform: uppercase;    /* Uppercase text */
 }
 
+/* Pseudo element for hover effect */
 .header-container a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--base-color);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
+    content: '';                  /* Empty content */
+    position: absolute;           /* Absolute positioning */
+    left: 0;                      /* Left position */
+    bottom: -5px;                 /* Bottom position */
+    width: 100%;                  /* Full width */
+    height: 2px;                  /* Height of line */
+    background-color: var(--base-color); /* Line color */
+    transform: scaleX(0);         /* Initially hidden */
+    transform-origin: right;      /* Transform origin */
+    transition: transform 0.3s ease; /* Transition effect */
 }
 
+/* Hover effect for header links */
 .header-container a:hover {
-    color: var(--base-color);
+    color: var(--base-color);     /* Text color on hover */
 }
 
+/* Hover effect for pseudo element */
 .header-container a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scaleX(1);         /* Show line on hover */
+    transform-origin: left;       /* Transform origin */
 }
 
+/* Logo styles */
 .logo {
-    position: relative;
-    float: right;
-    margin-top: -30px;
-    margin-left: 10px;
-    height: 80px;
-}  
-    
+    position: relative;           /* Relative positioning */
+    float: right;                 /* Float right */
+    margin-top: -30px;            /* Top margin */
+    margin-left: 10px;            /* Left margin */
+    height: 80px;                 /* Height */
+}
+
+/* Race track styles */
 #raceTrack {
-    margin-top:2%;
-    background:url('https://res.cloudinary.com/d3lrsu65ml/image/upload/v1480193365/raceTrack_zitxqz.png') repeat-x;
-    height:500px;
-    width:100%;
+    margin-top: 2%;               /* Top margin */
+    background: url('https://res.cloudinary.com/d3lrsu65ml/image/upload/v1480193365/raceTrack_zitxqz.png') repeat-x; /* Background image */
+    height: 500px;                /* Height */
+    width: 100%;                  /* Full width */
 }
-    
+
+/* Race button styles */
 img#raceButton {
-    cursor: pointer;
-    height:10%;
-    text-align: center;
-    max-width: 120px;
+    cursor: pointer;              /* Pointer cursor */
+    height: 10%;                  /* Height */
+    text-align: center;           /* Center align text */
+    max-width: 120px;             /* Maximum width */
 }
-    
+
+/* Image styles */
 img {
-    display:block;
-    position:relative;
-    height:14%;
+    display: block;               /* Block level element */
+    position: relative;           /* Relative positioning */
+    height: 14%;                  /* Height */
 }
-    
+
+/* Blue car styles */
 #carBlue {
-    top:66px;
-    }
-    
+    top: 66px;                    /* Top position */
+}
+
+/* Red car styles */
 #carRed {
-    top:199px;
-}
-h4{
-    font-size: 40px;
-    text-transform: uppercase;
+    top: 199px;                   /* Top position */
 }
 
+/* Heading styles */
+h4 {
+    font-size: 40px;              /* Font size */
+    text-transform: uppercase;    /* Uppercase text */
+}
+
+/* Result heading styles */
 h3 {
-    text-align:center;
-    color:var(--base-color3);
-    margin-top:-31px;
-}
-      
-h4#output {
-    color:var(--base-color2);
-    font-size: 32px;
-    text-align:center;
-}
-    
-.betCar {
-    font-size: 40px;
-    padding-left:0px;
+    text-align: center;           /* Center align text */
+    color: var(--base-color3);    /* Text color */
+    margin-top: -31px;            /* Top margin */
 }
 
+/* Output heading styles */
+h4#output {
+    color: var(--base-color2);    /* Text color */
+    font-size: 32px;              /* Font size */
+    text-align: center;           /* Center align text */
+}
+
+/* Betting car styles */
+.betCar {
+    font-size: 40px;              /* Font size */
+    padding-left: 0px;            /* Left padding */
+}
+
+/* Animation keyframes for hinge effect */
 @keyframes hinge {
-    0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
-    20%, 60% { transform: rotate(360deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
-    40% { transform: rotate(30deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
-    80% { transform: rotate(30deg) translateY(0); opacity: .7; transform-origin: top left; animation-timing-function: ease-in-out; }	
+    0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }
+    20%, 60% { transform: rotate(360deg); transform-origin: top left; animation-timing-function: ease-in-out; }
+    40% { transform: rotate(30deg); transform-origin: top left; animation-timing-function: ease-in-out; }
+    80% { transform: rotate(30deg) translateY(0); opacity: .7; transform-origin: top left; animation-timing-function: ease-in-out; }
     100% { transform: rotate(30deg); opacity: 0; }
 }
-    
+
+/* Hinge animation class */
 .hinge {
-    animation-duration: 1.5s;
-    animation-name: hinge;
+    animation-duration: 1.5s;     /* Animation duration */
+    animation-name: hinge;        /* Animation name */
 }
 
+/* Result text styles */
 #result {
-    font-size: 40px;
+    font-size: 40px;              /* Font size */
 }
 
-#allWinButton{
-    font-size: 24px;
-    padding: 5px 20px 5px;
-    background: lightgreen;
-    color: var(--text-color);
-    display: none;
+/* All Win button styles */
+#allWinButton {
+    font-size: 24px;              /* Font size */
+    padding: 5px 20px 5px;        /* Padding */
+    background: lightgreen;       /* Background color */
+    color: var(--text-color);     /* Text color */
+    display: none;                /* Initially hidden */
 }
 
+/* Points display styles */
 .points {
-    position: absolute; 
-    top: 10px; 
-    right: 10px; 
-    color: var(--text-color);
+    position: absolute;           /* Absolute positioning */
+    top: 10px;                    /* Top position */
+    right: 10px;                  /* Right position */
+    color: var(--text-color);     /* Text color */
 }
 
-#restartButton{
-    font-size: 32px;
-    padding: 10px 30px 10px;
-    background: var(--base-color2);
-    color: var(--base-color);
+/* Restart button styles */
+#restartButton {
+    font-size: 32px;              /* Font size */
+    padding: 10px 30px 10px;      /* Padding */
+    background: var(--base-color2); /* Background color */
+    color: var(--base-color);     /* Text color */
+}
+
+/* Footer Section */
+footer {
+    width: 100%;                  /* Full width */
+    height: 80px;                 /* Height */
+    margin-top: auto;             /* Auto top margin */
+    background-color: var(--base-color2); /* Background color */
+    color: var(--text-color);     /* Text color */
+}
+
+/* Footer text styles */
+footer h5 {
+    font-size: 2.5rem;            /* Font size */
+    padding-top: 20px;            /* Top padding */
+    padding-left: 20px;           /* Left padding */
+    display: flex;                /* Flex container */
+    justify-content: left;        /* Justify content left */
+    align-items: center;          /* Align items center */
+    text-align: left;             /* Text align left */
 }

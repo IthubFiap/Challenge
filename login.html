@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    
+    <!-- Link to the website's icon -->
     <link rel="shortcut icon" href="./assets/img/Icon.png" />
+
+    <!-- Link to custom CSS file for login page styles -->
     <link rel="stylesheet" href="./assets/css/login.css">
+
+    <!-- Link to Google Fonts for custom fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Teko&display=swap">
 </head>
 <body>
+    <!-- Header section -->
     <header>
         <div class="header-container">
+            <!-- Back link to home page -->
             <a href="index.html">Voltar</a>
+
+            <!-- Logo image -->
             <img src="./assets/img/FormulaE.png" alt="Logo" class="logo">
         </div>
     </header>
+
+    <!-- Main content section -->
     <main>
         <div class="login-container">
+            <!-- Login form -->
             <form class="login-form">
+                <!-- Form title -->
                 <h2 id="form-title">Login</h2>
+
+                <!-- Username input group -->
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
                 </div>
+
+                <!-- Password input group -->
                 <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+
+                <!-- Submit button for login form -->
                 <button type="submit" id="submit-btn">Login</button>
-                <button type="button" id="toggle-btn">Switch to Signup</button>
+
+                <!-- Button to toggle between login and signup form -->
+                <button type="button" id="toggle-btn">Trocar para Signup</button>
             </form>
         </div>
     </main>
+    <!-- Footer section with copyright notice -->
+    <footer> 
+        <h5>&copy; 2024 Todos os direitos reservados.</h5>
+    </footer>
+    <!-- Link to custom JavaScript file for login page functionality -->
     <script src="./assets/script/login.js"></script>
 </body>
 </html>

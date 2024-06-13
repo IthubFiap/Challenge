@@ -6,329 +6,320 @@
 }
 
 :root {
-    --base-color: #161515;
-    --base-color2: #1391D9;
-    --grid-color: #3F7085;
-    --text-color: #fff;
+    --base-color: #161515; /* Define a base color */
+    --base-color2: #1391D9; /* Define another base color */
+    --grid-color: #3F7085; /* Color for grid elements */
+    --text-color: #fff; /* Text color */
 }
 
 html {
-    font-size: 16px;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+    font-size: 16px; /* Base font size */
+    line-height: 1.15; /* Line height */
+    -webkit-text-size-adjust: 100%; /* Adjust text size for WebKit browsers */
 }
 
 body {
-    font-family: "Teko", Arial, sans-serif;
-    background: -webkit-linear-gradient(bottom, rgba(22, 21, 21, 1), rgba(22, 21, 21));
-    color: var(--text-color);
+    font-family: "Teko", Arial, sans-serif; /* Font family for body */
+    background: -webkit-linear-gradient(bottom, rgba(22, 21, 21, 1), rgba(22, 21, 21)); /* Background gradient */
+    color: var(--text-color); /* Text color */
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 64px; /* Heading 1 font size */
 }
 
 #perfil {
-    height: 50px;
-    margin-right: 30px;
+    height: 50px; /* Height of profile section */
+    margin-right: 30px; /* Right margin */
 }
 
 #logo {
-    margin-top: -50px;
-    height: 100px;
+    margin-top: -50px; /* Top margin for logo */
+    height: 100px; /* Height of logo */
 }
 
 #perfil #logo{
-    float: right;
+    float: right; /* Float logo to the right */
 }
 
 /* Header Styles */
 #menu {
     display: flex;
-    justify-content: flex-end; /* Coloca os itens à direita */
+    justify-content: flex-end; /* Align items to the right */
     align-items: center; 
-    background-color: var(--base-color2);
-    width: 100%;
-    height: 6vh;
+    background-color: var(--base-color2); /* Background color */
+    width: 100%; /* Full width */
+    height: 6vh; /* Header height */
 }
 
 #main-menu{
-    background: linear-gradient(rgba(22, 21, 21, 0.9), rgba(22, 22, 21, 1));
-    position: relative;
+    background: linear-gradient(rgba(22, 21, 21, 0.9), rgba(22, 22, 21, 1)); /* Background gradient */
+    position: relative; /* Relative positioning */
 }
 
 #main-menu ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    list-style: none;
-    gap: 10px;
-    top: 30px;
-    right: 30px;
+    position: absolute; /* Absolute positioning for menu */
+    list-style: none; /* Remove default list style */
+    gap: 10px; /* Gap between menu items */
+    top: 30px; /* Distance from top */
+    right: 30px; /* Distance from right */
 }
 
 #main-menu ul li a {
-    color: var(--text-color);
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: var(--text-color); /* Text color */
+    font-size: 2rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
 }
 
 #main-menu ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--base-color2);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Left position */
+    bottom: -5px; /* Distance from bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Line height */
+    background-color: var(--base-color2); /* Line color */
+    transform: scaleX(0); /* Initially scaled to 0 */
+    transform-origin: right; /* Transform origin */
+    transition: transform 0.3s ease; /* Transition effect */
 }
 
 #main-menu ul li a:hover {
-    color: var(--base-color2);
+    color: var(--base-color2); /* Text color on hover */
 }
 
 #main-menu ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: left; /* Transform origin */
 }
 
 #main-menu h1{
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 0;
-    font-size: 54px;
-    padding: 30px;
-    margin: 0;
+    text-transform: uppercase; /* Uppercase text */
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Distance from bottom */
+    font-size: 54px; /* Font size */
+    padding: 30px; /* Padding */
+    margin: 0; /* Margin */
 }
 
 #banner {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    z-index: -1;
+    background-size: cover; /* Cover background size */
+    background-attachment: fixed; /* Fixed background attachment */
+    background-position: center; /* Center background position */
+    position: relative; /* Relative positioning */
+    height: 70vh; /* Height */
+    width: 100%; /* Full width */
+    z-index: -1; /* Behind other content */
 }
 
 #formula-text {
-    width: 80%; 
-    margin: 0 auto; 
-    text-align: left; 
-    padding-top: 20px;
+    width: 80%; /* Width */
+    margin: 0 auto; /* Center align */
+    text-align: left; /* Left align text */
+    padding-top: 20px; /* Padding on top */
 }
 
 #formula-text p { 
-    font-size: 40px;
+    font-size: 40px; /* Font size */
 }
 
 #container-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center align items */
 }
 
 #text-container-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+    justify-content: space-between; /* Space between items */
 }
 
 #text-1 {
-    font-size: 48px;
+    font-size: 48px; /* Font size */
 }
 
 #image-1 {
-    max-height: 40%;
-    max-width:50%;
-    margin: 60px;
+    max-height: 40%; /* Maximum height */
+    max-width:50%; /* Maximum width */
+    margin: 60px; /* Margin */
 }
 
 #container-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center align items */
 }
 
 #text-container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+    justify-content: space-between; /* Space between items */
 }
 
 #text-2 {
-    font-size: 48px;
-    margin-left: 60px;
+    font-size: 48px; /* Font size */
+    margin-left: 60px; /* Left margin */
 }
 
 #image-2 {
-    max-height: 40%;
-    max-width:50%;
-    margin: 60px;
+    max-height: 40%; /* Maximum height */
+    max-width:50%; /* Maximum width */
+    margin: 60px; /* Margin */
 }
 
 #background{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    background-color: var(--base-color2);
-    width: 100%;
-    height: 150vh;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+    margin-top: 5%; /* Margin on top */
+    background-color: var(--base-color2); /* Background color */
+    width: 100%; /* Full width */
+    height: 150vh; /* Height */
 }
 
 #background h2{
-    text-transform: uppercase;
-    position: relative;
-    margin: 60px;
-    font-size: 64px;
-    color: var(--text-color);
+    text-transform: uppercase; /* Uppercase text */
+    position: relative; /* Relative positioning */
+    margin: 60px; /* Margin */
+    font-size: 64px; /* Font size */
+    color: var(--text-color); /* Text color */
 }
 
 #background h2:after {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 50px;
-	background: var(--text-color);
-	margin-top: -65px;
-    margin-left: -10px;
-    border-radius: 5px;
+	content: ""; /* Empty content */
+	display: block; /* Block element */
+	width: 4px; /* Line width */
+	height: 50px; /* Line height */
+	background: var(--text-color); /* Line color */
+	margin-top: -65px; /* Margin from top */
+    margin-left: -10px; /* Margin from left */
+    border-radius: 5px; /* Border radius */
 }
 
 .grid {
-    margin: 40px;
-    width: 88%;
-    height: auto;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--grid-color);
-    position: relative;
+    margin: 40px; /* Margin */
+    width: 88%; /* Width */
+    height: auto; /* Auto height */
+    border-radius: 20px; /* Border radius */
+    padding-bottom: 20px; /* Padding on bottom */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    background-color: var(--grid-color); /* Background color */
+    position: relative; /* Relative positioning */
 }
 
 .grid h3{
-    font-size: 50px;
-    margin-top: 35px;
-    margin-left: 50px;
+    font-size: 50px; /* Font size */
+    margin-top: 35px; /* Margin on top */
+    margin-left: 50px; /* Margin on left */
 }
 
 .grid p{
-    font-size: 50px;
-    margin-top: 20px;
-    margin-left: 50px;
+    font-size: 50px; /* Font size */
+    margin-top: 20px; /* Margin on top */
+    margin-left: 50px; /* Margin on left */
 }
 
 .grid:hover {
-    background-color: var(--base-color);
-    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
+    background-color: var(--base-color); /* Background color on hover */
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
 #container-3{
-    display: flex;
-    position: relative;
-    margin: 30px;
+    display: flex; /* Flexbox */
+    position: relative; /* Relative positioning */
+    margin: 30px; /* Margin */
 }
 
 #square{
-    position: relative;
-    margin: 20px;
-    margin-top: -7%;
-    max-width: 33%;
-    flex: 1;
-    padding: 30px; /* Espaçamento interno do quadrado */
-    background-color: #303138;
+    position: relative; /* Relative positioning */
+    margin: 20px; /* Margin */
+    margin-top: -7%; /* Negative margin on top */
+    max-width: 33%; /* Maximum width */
+    flex: 1; /* Flex grow */
+    padding: 30px; /* Padding inside the square */
+    background-color: #303138; /* Background color */
 }
 
 #square h2 {
-    color: var(--base-color2);
-    font-size: 46px;
-    margin-top: 300px; 
-    margin-left: 12px;
-    margin-bottom: 10px; 
-    position: relative; /* Adiciona position relative para o posicionamento absoluto funcionar */
+    color: var(--base-color2); /* Text color */
+    font-size: 46px; /* Font size */
+    margin-top: 300px;  /* Margin on top */
+    margin-left: 12px; /* Margin on left */
+    margin-bottom: 10px;  /* Margin on bottom */
+    position: relative; /* Relative positioning */
 }
 
 #square h2:after {
-    content: "";
-    display: block;
-    width: 4px;
-    height: 50px;
-    background: var(--text-color);
-    position: absolute;
-    top: 0; /* Ajusta a posição do topo */
-    right: calc(100% + 10px); /* Posiciona à direita do texto, ajuste conforme necessário */
+    content: ""; /* Empty content */
+    display: block; /* Block element */
+    width: 4px; /* Line width */
+    height: 50px; /* Line height */
+    background: var(--text-color); /* Line color */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Position from top */
+    right: calc(100% + 10px); /* Position to the right of text */
 }
 
 #text-container-3{
-    flex: 1; /* Ocupa 1 parte do espaço disponível */
-    padding: 20px; /* Adiciona espaçamento interno */
+    flex: 1; /* Take up 1 part of available space */
+    padding: 20px; /* Padding */
 }
 
-#text-container-3 h3{
-    text-transform: uppercase;
-    font-size: 64px;
-    margin-top: -10%;
-}
-
-#text-container-3 p{
-    font-size: 32px;
-}
-
-section{
-    margin-left: 110px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
+section
+{
+    margin-left: 110px; /* Left margin */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column direction */
+    align-items: flex-start; /* Align items to the start */
 }
 
 .team-member{
-    margin-top: 20px;
-    width: 65%;
-    background-color: #6CACBA;
-    padding-bottom: 20px;
-    padding-top: 5px;
-    margin-bottom: 25px
+    margin-top: 20px; /* Margin on top */
+    width: 65%; /* Width */
+    background-color: #6CACBA; /* Background color */
+    padding-bottom: 20px; /* Padding on bottom */
+    padding-top: 5px; /* Padding on top */
+    margin-bottom: 25px; /* Margin on bottom */
 }
 
 .team-member h3{
-    color: var(--text-color);
-    font-size: 43px;
-    margin-top: 35px;
-    margin-left: 25px;
+    color: var(--text-color); /* Text color */
+    font-size: 43px; /* Font size */
+    margin-top: 35px; /* Margin on top */
+    margin-left: 25px; /* Margin on left */
 }
 
 footer {
-    width: 100%;
-    height: 80px;
-    background-color: var(--base-color2);
-    color: var(--text-color);
+    width: 100%; /* Full width */
+    height: 80px; /* Height */
+    background-color: var(--base-color2); /* Background color */
+    color: var(--text-color); /* Text color */
 }
 
 footer h5 {
-    font-size: 2.5rem;
-    padding-top: 20px;
-    padding-left: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
+    font-size: 2.5rem; /* Font size */
+    padding-top: 20px; /* Padding on top */
+    padding-left: 20px; /* Padding on left */
+    display: flex; /* Flexbox */
+    justify-content: left; /* Justify content to the left */
+    align-items: center; /* Align items to center */
+    text-align: left; /* Left align text */
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0; /* Start opacity */
     }
     to {
-        opacity: 1;
+        opacity: 1; /* End opacity */
     }
 }
 
 .fade-in-text {
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s ease-in; /* Fade in animation */
 }

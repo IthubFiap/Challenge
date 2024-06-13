@@ -5,18 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Root variables for color scheme */
 :root {
     --base-color: #161515;
     --base-color2: #1391D9;
-    --base-color3:#E4DFD6;
+    --base-color3: #E4DFD6;
     --text-color: #fff;
     --sam-bird-color: #BA793E;
-    --norman-nato-color: #DE3530; 
-    --maximilian-gunther:#254979;
-    --jean-eric-vergne:#DEB732;
-    --sebastien-buemi:#41BF5D;
-    --lucas-di-grassi:#4082BA;
-    --sergio-sette-camara:#64615C;
+    --norman-nato-color: #DE3530;
+    --maximilian-gunther: #254979;
+    --jean-eric-vergne: #DEB732;
+    --sebastien-buemi: #41BF5D;
+    --lucas-di-grassi: #4082BA;
+    --sergio-sette-camara: #64615C;
     --sam-bird-bg: linear-gradient(to right, #BA793E 33%, #CBA481 88%);
     --norman-nato-bg: linear-gradient(to right, #91111A 33%, #C94C58 88%);
     --maximilian-gunther-bg: linear-gradient(to right, #2C3497 33%, #5A6BD6 88%);
@@ -24,218 +25,234 @@
     --sebastien-buemi-bg: linear-gradient(to right, #41BF5D 33%, #A6EEA6 88%);
     --lucas-di-grassi-bg: linear-gradient(to right, #4082BA 33%, #3FBAC2 88%);
     --sergio-sette-camara-bg: linear-gradient(to right, #64615C 33%, #E5E0D5 88%);
-
 }
 
+/* General styling for the entire document */
 html {
-    font-size: 16px;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+    font-size: 16px; /* Base font size */
+    line-height: 1.15; /* Line height for text */
+    -webkit-text-size-adjust: 100%; /* Adjust text size for webkit browsers */
 }
 
 body {
-    font-family: "Teko", Arial, sans-serif;
-    background: -webkit-linear-gradient(bottom, #23D9B8, #23D9B8);
+    font-family: "Teko", Arial, sans-serif; /* Font stack for the entire body */
+    background: -webkit-linear-gradient(bottom, #23D9B8, #23D9B8); /* Background gradient */
 }
 
+/* Styles for SweetAlert title */
 .swal-title {
-    font-size: 54px; /* Ajuste o tamanho do título conforme necessário */
-    color: var(--text-color);
+    font-size: 54px; /* Adjust title font size */
+    color: var(--text-color); /* Title text color */
 }
 
 /* Header Styles */
 #voltar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    background-color: var(--base-color);
-    width: 100%;
-    height: 6vh;
+    display: flex; /* Flexbox layout */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center; /* Center items vertically */
+    background-color: var(--base-color); /* Background color */
+    width: 100%; /* Full width */
+    height: 6vh; /* Header height */
 }
 
 #voltar a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    gap: 10px;
-    margin-top: 30px;
-    list-style: none;
-    color: var(--text-color);
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items at the start */
+    position: absolute; /* Positioning */
+    margin-left: 20px; /* Left margin */
+    margin-bottom: 20px; /* Bottom margin */
+    gap: 10px; /* Space between elements */
+    margin-top: 30px; /* Top margin */
+    list-style: none; /* Remove default list style */
+    color: var(--text-color); /* Text color */
+    font-size: 2rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
 }
 
 #voltar a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--base-color2);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
+    content: ''; /* Empty content */
+    position: absolute; /* Positioning */
+    left: 0; /* Left position */
+    bottom: -5px; /* Negative bottom position */
+    width: 100%; /* Full width */
+    height: 2px; /* Line height */
+    background-color: var(--base-color2); /* Line color */
+    transform: scaleX(0); /* Initially scaled to zero */
+    transform-origin: right; /* Transform origin */
+    transition: transform 0.3s ease; /* Transition effect */
 }
 
 #voltar a:hover {
-    color: var(--base-color2);
+    color: var(--base-color2); /* Text color on hover */
 }
 
 #voltar a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scaleX(1); /* Scale line on hover */
+    transform-origin: left; /* Transform origin */
 }
 
+/* Triangle shape for decorative element */
 .triangle {
-    position: absolute;
-    right: 0;
-    width: 0;
-    height: 0;
-    transform: translateY(-60%) rotate(-90deg);
-    border-left: 250px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 250px solid var(--base-color3);
+    position: absolute; /* Positioning */
+    right: 0; /* Right position */
+    width: 0; /* No initial width */
+    height: 0; /* No initial height */
+    transform: translateY(-60%) rotate(-90deg); /* Translate and rotate */
+    border-left: 250px solid transparent; /* Left border */
+    border-right: 0px solid transparent; /* Right border */
+    border-bottom: 250px solid var(--base-color3); /* Bottom border */
 }
 
+/* Star icon styling */
 .star {
-    position: absolute;
-    top: 5.5%;
-    left: 97.5%;
-    font-size: 42px;
-    transform: translate(-50%, -50%);
-    color: white; /* Cor da estrela */
+    position: absolute; /* Positioning */
+    top: 5.5%; /* Top position */
+    left: 97.5%; /* Left position */
+    font-size: 42px; /* Font size */
+    transform: translate(-50%, -50%); /* Translate to center */
+    color: white; /* Star color */
 }
 
 .star:hover {
-    transform: translate(-50%, -50%) scale(1.2); /* Aumenta um pouco o tamanho da estrela no hover */
+    transform: translate(-50%, -50%) scale(1.2); /* Scale on hover */
 }
 
 .star.yellow {
-    color: yellow; /* Cor da estrela quando clicada */
+    color: yellow; /* Yellow star color when clicked */
 }
 
+/* Container styling */
 .container {
-    padding-top: 20px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
+    padding-top: 20px; /* Top padding */
+    padding-left: 20px; /* Left padding */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
 }
 
-h1{
-    font-size: 82px;
-    color: var(--text-color);
-    text-transform: uppercase;
+/* Large heading style */
+h1 {
+    font-size: 82px; /* Large font size */
+    color: var(--text-color); /* Text color */
+    text-transform: uppercase; /* Uppercase text */
 }
 
+/* Dot styling */
 .dot {
-    width: 18px;
-    height: 18px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    margin: 12px;
+    width: 18px; /* Dot width */
+    height: 18px; /* Dot height */
+    background-color: var(--text-color); /* Dot color */
+    border-radius: 50%; /* Rounded shape */
+    margin: 12px; /* Margin around dots */
 }
 
-h2{
-    font-size: 82px;
-    text-transform: uppercase;
-    color: #BA793E;
+/* Subheading style */
+h2 {
+    font-size: 82px; /* Large font size */
+    text-transform: uppercase; /* Uppercase text */
+    color: #BA793E; /* Specific color */
 }
 
+/* Large text block */
 h5 {
-    opacity: 0.7;
-    text-transform: uppercase;
-    font-size: 200px; /* Tamanho da fonte */
-    color: var(--text-color);
-    margin-top: 50px; /* Espaçamento superior */
-    text-align: center; /* Alinhamento do texto */
-    letter-spacing: 25px; /* Aumenta o espaço entre as letras */
+    opacity: 0.7; /* Opacity for semi-transparency */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 200px; /* Large font size */
+    color: var(--text-color); /* Text color */
+    margin-top: 50px; /* Top margin */
+    text-align: center; /* Center alignment */
+    letter-spacing: 25px; /* Increased letter spacing */
 }
 
+/* Space for alignment */
 span {
-    margin-right: 250px;
+    margin-right: 250px; /* Right margin */
 }
 
+/* Driver section container */
 .driver {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.7);
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente os filhos dentro de .pilot */
-    align-items: center; /* Centraliza verticalmente os filhos dentro de .pilot */
+    position: absolute; /* Positioning */
+    top: 45%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%) scale(1.7); /* Scale and center */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
+/* Driver information container */
 .driver-info {
-    position: absolute;
-    top: 74%; /* Posiciona a partir da parte inferior do elemento pai */
-    left: 50%;
-    width: 100%;
-    height: 26vh;
-    padding: 20px; /* Espaçamento interno */
-    gap: 120px;
-    letter-spacing: 10px; /* Aumenta o espaço entre as letras */
-    transform: translateX(-50%);
-    background: linear-gradient(to right, #BA793E 33%, #CBA481 88%);
-    color: var(--text-color);
-    text-align: center; /* Alinhamento do texto */
-    display: flex; /* Usar flexbox */
-    text-transform: uppercase;
+    position: absolute; /* Positioning */
+    top: 74%; /* Position from bottom */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Full width */
+    height: 26vh; /* Height */
+    padding: 20px; /* Padding */
+    gap: 120px; /* Space between elements */
+    letter-spacing: 10px; /* Increased letter spacing */
+    transform: translateX(-50%); /* Center horizontally */
+    background: linear-gradient(to right, #BA793E 33%, #CBA481 88%); /* Gradient background */
+    color: var(--text-color); /* Text color */
+    text-align: center; /* Center alignment */
+    display: flex; /* Flexbox layout */
+    text-transform: uppercase; /* Uppercase text */
 }
 
-.driver-info div{
-    font-size: 64px;
-    align-items: center;
-    text-align: center;
+/* Driver information section */
+.driver-info div {
+    font-size: 64px; /* Large font size */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
 }
 
-.driver-info h3{
-    font-size: 120px;
+/* Driver name style */
+.driver-info h3 {
+    font-size: 120px; /* Very large font size */
 }
 
+/* Divider line styling */
 .divider {
-    width: 3.5px; /* Largura do divisor */
-    height: 210px; /* Altura do divisor */
-    background-color: white; /* Cor do divisor */
-    margin: 0 -35px; /* Espaçamento ao redor do divisor */
+    width: 3.5px; /* Line width */
+    height: 210px; /* Line height */
+    background-color: white; /* Line color */
+    margin: 0 -35px; /* Negative margins for spacing */
 }
 
+/* Background for wins section */
 .vitorias {
-    background-color: var(--base-color3);
-    margin: -20px -30px; /* Margens negativas para expandir para os lados */
-    padding: 20px 60px; /* Preenchimento extra para manter o conteúdo dentro da área */
+    background-color: var(--base-color3); /* Background color */
+    margin: -20px -30px; /* Negative margin for full width */
+    padding: 20px 60px; /* Padding inside the section */
 }
 
+/* Team image styling */
 .team {
-    max-width: 50%;
-    max-height: 50%;
-    min-height: 200px;
-    min-width: 200px;
+    max-width: 50%; /* Maximum width */
+    max-height: 50%; /* Maximum height */
+    min-height: 200px; /* Minimum height */
+    min-width: 200px; /* Minimum width */
 }
 
-/* Estilo do botão de troca de piloto */
+/* Button style for changing driver */
 .button-change-pilot {
-    position: absolute;
-    top: 50%; /* Alinhamento vertical no meio da página */
-    right: 10px; /* Espaçamento da borda direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    background-color: var(--base-color);
-    color: var(--base-color2);
-    border: none; /* Remove a borda padrão */
-    padding: 26px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor em formato de mão ao passar o mouse */
-    font-size: 32px; /* Tamanho da fonte */
-    display: flex; /* Flexbox para centralizar a seta */
-    justify-content: center; /* Centraliza horizontalmente a seta */
-    align-items: center; /* Centraliza verticalmente a seta */
-    transition: transform 0.2s ease; /* Animação suave ao passar o mouse */
+    position: absolute; /* Positioning */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from right edge */
+    transform: translateY(-50%); /* Center vertically */
+    background-color: var(--base-color); /* Background color */
+    color: var(--base-color2); /* Text color */
+    border: none; /* Remove default border */
+    padding: 26px; /* Padding inside the button */
+    cursor: pointer; /* Cursor style */
+    font-size: 32px; /* Font size */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: transform 0.2s ease; /* Smooth transform animation */
 }
 
 .button-change-pilot:hover {
-    transform: translateY(-50%) scale(1.1); /* Aumenta um pouco o tamanho do botão no hover */
+    transform: translateY(-50%) scale(1.1); /* Scale on hover */
 }

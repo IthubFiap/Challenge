@@ -87,43 +87,43 @@ const pilots = [
 
 let currentPilotIndex = 0;
 
-// Função para trocar de piloto
+// Function to change the current pilot
 function changePilot() {
     currentPilotIndex = (currentPilotIndex + 1) % pilots.length;
     updatePilotInfo();
 }
 
-// Função para atualizar as informações do piloto no DOM
+// Function to update the pilot information in the DOM
 function updatePilotInfo() {
     const pilot = pilots[currentPilotIndex];
 
-    // Atualiza a imagem do piloto
+    // Update the pilot image
     document.querySelector('.driver').src = pilot.image;
 
-    // Atualiza o nome do piloto
+    // Update the pilot name
     document.querySelector('#pilot-name').textContent = pilot.name;
 
-    // Atualiza o número do piloto e a cor do número
+    // Update the pilot number and number color
     const pilotNumber = document.querySelector('#pilot-number');
     pilotNumber.textContent = pilot.number;
     pilotNumber.style.color = pilot.numberColor;
 
-    // Atualiza o número de vitórias, pódios e classificação
+    // Update the number of victories, podiums, and classification
     document.querySelector('#vitorias').textContent = pilot.victories;
     document.querySelector('#podios').textContent = pilot.podiums;
     document.querySelector('#classificacao').textContent = pilot.classification;
 
-    // Atualiza o background da seção driver-info
+    // Update the background of the driver-info section
     document.querySelector('.driver-info').style.background = pilot.bgColor;
 
-    // Atualiza a imagem da equipe
+    // Update the team image
     document.querySelector('.team').src = pilot.teamImage;
 
-    // Atualiza a cor da estrela de favorito
+    // Update the color of the favorite star
     updateFavoriteStar(pilot.favorite);
 }
 
-// Função para atualizar a cor da estrela de favorito
+// Function to update the color of the favorite star
 function updateFavoriteStar(isFavorite) {
     const starIcon = document.querySelector('#favorite-star i');
     if (isFavorite) {
@@ -133,12 +133,12 @@ function updateFavoriteStar(isFavorite) {
     }
 }
 
-// Função para alternar o estado de favorito do piloto
+// Function to toggle the favorite state of the pilot
 function toggleFavorite() {
     const pilot = pilots[currentPilotIndex];
     pilot.favorite = !pilot.favorite;
     updateFavoriteStar(pilot.favorite);
 }
 
-// Chama a função inicialmente para carregar o primeiro piloto
+// Call the function initially to load the first pilot
 updatePilotInfo();

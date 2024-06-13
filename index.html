@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula E</title>
-    <!-- Stylesheets -->
+    
+    <!-- Link to the website's icon -->
     <link rel="shortcut icon" href="./assets/img/Icon.png" />
+
+    <!-- Link to custom CSS file for home page styles -->
     <link rel="stylesheet" href="./assets/css/home.css">
+
+    <!-- Link to Google Fonts for custom fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Teko&display=swap">
+
+    <!-- Link to Normalize.css to make browsers render all elements more consistently and in line with modern standards -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Link to SweetAlert2 CSS for styled alerts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
+    <!-- Header section containing the user navigation and main navigation -->
     <header>
         <!-- User Navigation -->
         <div id="menu">
+            <!-- Logo image -->
             <img src="./assets/img/FormulaE.png" id="logo" alt="Formula E">
+            
+            <!-- Profile image -->
             <img src="./assets/img/Perfil.png" id="perfil" alt="Perfil">
         </div>
+
         <!-- Main Navigation -->
         <nav id="main-menu">
+            <!-- Banner image -->
             <img src="./assets/img/Fundo.jpg" id="banner">
-                <ul>
-                    <li><a href="sobre.html" class="fade-in-text">Sobre</a></li>
-                    <li><a href="pilotos.html" class="fade-in-text">Pilotos</a></li>
-                    <li><a href="login.html" class="fade-in-text">Login</a></li>
-                    <li><a href="game.html" class="fade-in-text">Game</a></li>
-                </ul>
-                <div id="info">
-                    <section id="introduction">
-                        <h2 class="fade-in-text">Transformando Watts em Vitória</h2>
-                        <div id="icon">
-                            <img src="./assets/img/Icon.png" alt="Icon" class="fade-in-text">
-                        </div>
-                        <div id="phrase">
-                            <h1 class="fade-in-text">Em Alta</h1>
-                            <h2 class="fade-in-text" style="color: #1391D9;">Voltagem</h2>
-                        </div>
-                        <p class="fade-in-text">
-                            Na vanguarda da corrida pela inovação elétrica, a Formula E impulsiona o conhecimento. 
-                            Tecnologia de ponta e pesquisa contínua expandem nossa compreensão sobre veículos elétricos, 
-                            oferecendo uma plataforma dinâmica de aprendizado em mobilidade sustentável.
-                        </p>
-                    </section>
-                </div>
+
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="sobre.html" class="fade-in-text">Sobre</a></li>
+                <li><a href="pilotos.html" class="fade-in-text">Pilotos</a></li>
+                <li><a href="login.html" class="fade-in-text">Login</a></li>
+                <li><a href="game.html" class="fade-in-text">Game</a></li>
+            </ul>
+
+            <!-- Information section within the navigation -->
+            <div id="info">
+                <section id="introduction">
+                    <!-- Introduction heading -->
+                    <h2 class="fade-in-text">Transformando Watts em Vitória</h2>
+
+                    <!-- Icon image -->
+                    <div id="icon">
+                        <img src="./assets/img/Icon.png" alt="Icon" class="fade-in-text">
+                    </div>
+
+                    <!-- Phrase section with headings -->
+                    <div id="phrase">
+                        <h1 class="fade-in-text">Em Alta</h1>
+                        <h2 class="fade-in-text" style="color: #1391D9;">Voltagem</h2>
+                    </div>
+
+                    <!-- Paragraph describing the Formula E -->
+                    <p class="fade-in-text">
+                        Na vanguarda da corrida pela inovação elétrica, a Formula E impulsiona o conhecimento. 
+                        Tecnologia de ponta e pesquisa contínua expandem nossa compreensão sobre veículos elétricos, 
+                        oferecendo uma plataforma dinâmica de aprendizado em mobilidade sustentável.
+                    </p>
+                </section>
+            </div>
         </nav>
     </header>
 
-    <!-- Divisor Section -->
+    <!-- Divider section for separating content -->
     <div id="divisor">
         <h2 class="fade-in-text">Pilotos</h2>
     </div>
 
-    <!-- Slider Section -->
+    <!-- Slider section for displaying pilot images -->
     <div class="slider-container">
         <div class="slider-images">
             <!-- Slider Image Items -->
@@ -115,15 +142,20 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer section with copyright notice -->
     <footer> 
         <h5>&copy; 2024 Todos os direitos reservados.</h5>
     </footer>
 
     <!-- Scripts -->
+    <!-- Link to SweetAlert2 JavaScript library for alerts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Link to custom JavaScript files for additional functionality -->
     <script src="./assets/script/alert.js"></script>
     <script src="./assets/script/script.js"></script>
+
+    <!-- jQuery script for slider functionality -->
     <script>
         jQuery(document).ready(function ($) {
             $(".slider-img").on("click", function () {

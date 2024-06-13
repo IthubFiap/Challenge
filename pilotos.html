@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilotos</title>
+    
+    <!-- Link to the website's icon -->
     <link rel="shortcut icon" href="./assets/img/Icon.png" />
+
+    <!-- Link to custom CSS files for pilotos page and alert styles -->
     <link rel="stylesheet" href="./assets/css/pilotos.css">
     <link rel="stylesheet" href="./assets/css/alert.css">
+
+    <!-- Link to Google Fonts for custom fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Teko&display=swap">
+
+    <!-- Link to Font Awesome for star icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to SweetAlert2 for alert styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
+    <!-- Header section -->
     <header>
         <div id="voltar">
+            <!-- Back link to home page -->
             <a href="index.html" class="fade-in-text">Voltar</a>
         </div>
+        <!-- Decorative elements in the header -->
         <div class="triangle"></div>
         <div class="star" onclick="toggleStarColor()">
             <i class="fa fa-star"></i>
         </div>
     </header>
+
+    <!-- Main content container -->
     <div class="container">
+        <!-- Display pilot's name -->
         <h1 id="pilot-name">Sam Bird</h1>
+        <!-- Decorative dot -->
         <div class="dot"></div>
+        <!-- Display pilot's number with initial color -->
         <h2 id="pilot-number" style="color: #BA793E;">8</h2> <!-- Cor inicial para Sam Bird -->
+        <!-- Favorite star icon with click event -->
         <div id="favorite-star" class="star" onclick="toggleFavorite()">
             <i class="fa fa-star"></i>
         </div>
     </div>
+
+    <!-- Subtitle for the section -->
     <h5>Formula E</h5>
+    <!-- Pilot's image -->
     <img src="./assets/pilots-no-bg/Sam_Bird-removebg-preview.png" class="driver" alt="Sam Bird">
+
+    <!-- Section for pilot's detailed info with initial background gradient -->
     <section class="driver-info" style="background: linear-gradient(to right, #BA793E 33%, #CBA481 88%);"> <!-- Background inicial para Sam Bird -->
+        <!-- Section for victories count -->
         <div class="vitorias">
             <div>Vitórias</div>
             <h3 id="vitorias">12</h3>
         </div>
+        <!-- Section for podium count -->
         <div>
             <div>Pódios</div>
             <h3 id="podios">27</h3>
         </div>
+        <!-- Decorative divider -->
         <div class="divider"></div>
+        <!-- Section for classification -->
         <div>
             <div>Classificação</div>
             <h3 id="classificacao">10th</h3>
         </div>
+        <!-- Team image -->
         <img src="./assets/pilots-no-bg/Neon_Mclaren.png" class="team" id="team-image">
     </section>
+
+    <!-- Button to change the pilot with an icon -->
     <button class="button-change-pilot" onclick="changePilot()"><i class="fa fa-chevron-right"></i></button>
+
+    <!-- Link to SweetAlert2 script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link to custom JavaScript files -->
     <script src="./assets/script/alert2.js"></script>
     <script src="./assets/script/driver.js"></script>
     <script src="./assets/script/favorite.js"></script>
