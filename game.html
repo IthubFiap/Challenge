@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Insanos</title>
+    <link rel="shortcut icon" href="./assets/img/Icon.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Teko&display=swap">
+    <link rel="stylesheet" href="./assets/css/game.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a href="index.html">Voltar</a>
+        <img src="./assets/img/FormulaE.png" alt="Logo" class="logo">
+    </div>
+</header>
+<div class="row">
+<center>
+<div id="placeBet">
+<h4 style="color: lightgreen;">Aposte no Carro $$$</h4> 
+<label class="betOption">
+    <input type="radio" name="car" value="blue" class="betCar">
+    <h1 style="color: lightblue;">Carro Azul</h1>
+</label>
+<label class="betOption" style="margin-left: 15px;">
+    <input type="radio" name="car" value="red" class="betCar">
+    <h1 style="color: lightcoral;">Carro Vermelho</h1>
+</label>
+  <img src="./assets/img/bandeira.png" id="raceButton" hidden />
+</div>
+</center>
+</div>
+
+<div id="raceTrack"> 
+<img src="https://res.cloudinary.com/d3lrsu65ml/image/upload/v1480193367/CarBlue_xyn4y7.png" id="carBlue" />
+<img src="https://res.cloudinary.com/d3lrsu65ml/image/upload/v1480193367/CarRed_emeska.png" id="carRed"/>
+</div>
+
+<h3 id="result" hidden>Resultado</h3>
+<h4 id="output"></h4>
+
+<h4 id="points">Pontos: 0</h4>
+<button id="allWinButton">All Win</button>
+
+<audio id="winSound" src="./assets/audio/Ganhou.mp3" preload="auto"></audio>
+
+<audio id="perdeu" src="./assets/audio/Errou.mp3" preload="auto"></audio>
+
+<audio id="allLose" src="./assets/audio/ErrouAllWin.mp3" preload="auto"></audio>
+
+<audio id="allWinSound" src="./assets/audio/GanhouAllWin.mp3" preload="auto"></audio>
+
+<button id="restartButton" style="display: none;">Reiniciar</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./assets/script/game.js"></script>
+</body>
+</html>

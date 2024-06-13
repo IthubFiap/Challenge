@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-color: #161515;
+    --base-color2: #1391D9;
+    --base-color3: #3F7085;
+    --text-color: #fff;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Teko", Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--base-color), rgba(22, 21, 21, 1));
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--base-color2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    background-color: var(--base-color2);
+    height: 3vh;
+}
+
+.header-container a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-top: 30px;
+    list-style: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-container a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--base-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.header-container a:hover {
+    color: var(--base-color);
+}
+
+.header-container a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logo {
+    position: relative;
+    float: right;
+    margin-top: -30px;
+    margin-left: 10px;
+    height: 80px;
+}  
+    
+#raceTrack {
+    margin-top:2%;
+    background:url('https://res.cloudinary.com/d3lrsu65ml/image/upload/v1480193365/raceTrack_zitxqz.png') repeat-x;
+    height:500px;
+    width:100%;
+}
+    
+img#raceButton {
+    cursor: pointer;
+    height:10%;
+    text-align: center;
+    max-width: 120px;
+}
+    
+img {
+    display:block;
+    position:relative;
+    height:14%;
+}
+    
+#carBlue {
+    top:66px;
+    }
+    
+#carRed {
+    top:199px;
+}
+h4{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align:center;
+    color:var(--base-color3);
+    margin-top:-31px;
+}
+      
+h4#output {
+    color:var(--base-color2);
+    font-size: 32px;
+    text-align:center;
+}
+    
+.betCar {
+    font-size: 40px;
+    padding-left:0px;
+}
+
+@keyframes hinge {
+    0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
+    20%, 60% { transform: rotate(360deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+    40% { transform: rotate(30deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+    80% { transform: rotate(30deg) translateY(0); opacity: .7; transform-origin: top left; animation-timing-function: ease-in-out; }	
+    100% { transform: rotate(30deg); opacity: 0; }
+}
+    
+.hinge {
+    animation-duration: 1.5s;
+    animation-name: hinge;
+}
+
+#result {
+    font-size: 40px;
+}
+
+#allWinButton{
+    font-size: 24px;
+    padding: 5px 20px 5px;
+    background: lightgreen;
+    color: var(--text-color);
+    display: none;
+}
+
+.points {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: var(--text-color);
+}
+
+#restartButton{
+    font-size: 32px;
+    padding: 10px 30px 10px;
+    background: var(--base-color2);
+    color: var(--base-color);
+}
