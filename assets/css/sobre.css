@@ -140,6 +140,10 @@ h1 {
     justify-content: space-between; /* Space between items */
 }
 
+#text-container-1 h1{
+    text-transform: uppercase
+}
+
 #text-1 {
     font-size: 48px; /* Font size */
 }
@@ -160,6 +164,10 @@ h1 {
     display: flex; /* Flexbox */
     flex-direction: column; /* Column direction */
     justify-content: space-between; /* Space between items */
+}
+
+#text-container-2 h1{
+    text-transform: uppercase
 }
 
 #text-2 {
@@ -203,7 +211,7 @@ h1 {
 
 .grid {
     margin: 40px; /* Margin */
-    width: 88%; /* Width */
+    width: 95%; /* Width */
     height: auto; /* Auto height */
     border-radius: 20px; /* Border radius */
     padding-bottom: 20px; /* Padding on bottom */
@@ -213,6 +221,7 @@ h1 {
 }
 
 .grid h3{
+    text-transform: uppercase;
     font-size: 50px; /* Font size */
     margin-top: 35px; /* Margin on top */
     margin-left: 50px; /* Margin on left */
