@@ -23,6 +23,11 @@ body {
     color: var(--text-color);
 }
 
+.swal-title {
+    font-size: 54px; /* Ajuste o tamanho do título conforme necessário */
+    color: var(--text-color);
+}
+  
 #perfil {
     height: 50px;
     margin-right: 30px;

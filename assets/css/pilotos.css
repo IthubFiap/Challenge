@@ -38,6 +38,11 @@ body {
     background: -webkit-linear-gradient(bottom, #23D9B8, #23D9B8);
 }
 
+.swal-title {
+    font-size: 54px; /* Ajuste o tamanho do título conforme necessário */
+    color: var(--text-color);
+}
+
 /* Header Styles */
 #voltar {
     display: flex;
@@ -234,4 +239,3 @@ span {
 .button-change-pilot:hover {
     transform: translateY(-50%) scale(1.1); /* Aumenta um pouco o tamanho do botão no hover */
 }
-
