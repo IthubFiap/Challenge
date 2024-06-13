@@ -266,6 +266,8 @@ h1 {
 }
 
 #text-container-3{
+    font-size: 36px;
+    margin-top: -5%;
     flex: 1; /* Take up 1 part of available space */
     padding: 20px; /* Padding */
 }

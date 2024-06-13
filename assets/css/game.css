@@ -195,14 +195,6 @@ h4#output {
     color: var(--text-color);     /* Text color */
 }
 
-/* Restart button styles */
-#restartButton {
-    font-size: 32px;              /* Font size */
-    padding: 10px 30px 10px;      /* Padding */
-    background: var(--base-color2); /* Background color */
-    color: var(--base-color);     /* Text color */
-}
-
 /* Footer Section */
 footer {
     width: 100%;                  /* Full width */
