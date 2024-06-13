@@ -49,17 +49,17 @@ body {
 
 /* Banner Section */
 #banner {
-    background: linear-gradient(rgba(22, 21, 21, 0.9), rgba(22, 22, 21, 1)), url("/assets/img/Fundo.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: relative;
     height: 70vh;
     width: 100%;
-    position: relative;
     z-index: -1;
 }
 
 #main-menu{
+    background: linear-gradient(rgba(22, 21, 21, 0.9), rgba(22, 22, 21, 1));
     position: relative;
 }
 
