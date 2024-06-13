@@ -8,6 +8,7 @@
 :root {
     --base-color: #161515;
     --base-color2: #1391D9;
+    --grid-color: #3F7085;
     --text-color: #fff;
 }
 
@@ -20,6 +21,7 @@ html {
 body {
     font-family: "Teko", Arial, sans-serif;
     background: -webkit-linear-gradient(bottom, rgba(22, 21, 21, 1), rgba(22, 21, 21));
+    color: var(--text-color);
 }
 
 #perfil {
@@ -46,15 +48,19 @@ body {
     height: 6vh;
 }
 
+#main-menu{
+    position: relative;
+}
+
 #main-menu ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    margin-left: 86.5%;
-    gap: 10px;
-    margin-top: 30px;
     list-style: none;
+    gap: 10px;
+    top: 30px;
+    right: 30px;
 }
 
 #main-menu ul li a {
@@ -87,130 +93,131 @@ body {
     transform-origin: left;
 }
 
-#banner{
-    background: linear-gradient(rgba(22,21,21,0.5),rgba(22,22,21,1)), url('/assets/img/SobreFormulaE.jpg');
+#main-menu h1{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    font-size: 54px;
+    padding: 30px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+#banner {
+    background: linear-gradient(rgba(22,21,21,0.5),rgba(22,22,21,1)), url("/assets/img/SobreFormulaE.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: relative;
     height: 70vh;
     width: auto;
 }
 
-h1{
+#formula-text {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: left; 
+    padding-top: 20px;
+}
+
+#formula-text p { 
+    font-size: 40px;
+}
+
+#container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text-1 {
     font-size: 48px;
-    margin-left: 120px;
-    margin-top: -70px;
-    text-transform: uppercase;
-    position: absolute;
-    color: var(--text-color);
 }
 
-#formula-text p{
-    margin-top: 60px;
-    margin-left: 227px;
-    color: var(--text-color);
-    font-size: 40px;
+#image-1 {
+    max-height: 40%;
+    max-width:50%;
+    margin: 60px;
 }
 
-#formula-text h5{
-    text-align: center;
-    color: var(--text-color);
-    font-size: 40px;
+#container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#challenge img{
-    width: 100vh;
+#text-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text-2 {
+    font-size: 48px;
+    margin-left: 60px;
+}
+
+#image-2 {
+    max-height: 40%;
+    max-width:50%;
+    margin: 60px;
+}
+
+#background{
+    display: flex;
+    flex-direction: column;
     margin-top: 5%;
-    margin-left: 120px;
+    background-color: var(--base-color2);
+    width: 100%;
+    height: 150vh;
 }
 
-#challenge h1{
-    font-size: 64px;
-    margin-top: -550px;
-    margin-left: 60%;
-}
-
-#challenge p{
-    max-width: 605px;
-    margin-top: -25%;
-    margin-left: 60%;
-    color: var(--text-color);
-    font-size: 40px;
-}
-
-#solution img{
-    width: 100vh;
-    margin-top: 12%;
-    margin-left: 42%;
-}
-
-#solution h1{
-    font-size: 64px;
-    margin-top: -550px;
-    margin-left: 120px;
-}
-
-#solution p{
-    max-width: 605px;
-    margin-top: -25%;
-    margin-left: 120px;
-    color: var(--text-color);
-    font-size: 40px;
-}
-
-h2{
+#background h2{
     text-transform: uppercase;
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 120px;
+    position: relative;
+    margin: 60px;
     font-size: 64px;
     color: var(--text-color);
 }
 
-h2:after {
+#background h2:after {
 	content: "";
 	display: block;
 	width: 4px;
 	height: 50px;
-	background: #fff;
+	background: var(--text-color);
 	margin-top: -65px;
     margin-left: -10px;
     border-radius: 5px;
 }
 
-#custom-space{
-    margin-top: 200px;
-}
-#background{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-    background-color: var(--base-color2);
-    width: 100%;
-    height: 140vh;
-}
-
 .grid {
-    margin-left: 110px;
-    margin-top: 20px;
+    margin: 40px;
     width: 88%;
     height: auto;
     border-radius: 20px;
-    background-color: var(--grid-color);
     padding-bottom: 20px;
-    padding-top: 10px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--grid-color);
+    position: relative;
 }
 
 .grid h3{
-    color: var(--text-color);
     font-size: 50px;
     margin-top: 35px;
     margin-left: 50px;
 }
 
 .grid p{
-    color: var(--text-color);
     font-size: 50px;
     margin-top: 20px;
     margin-left: 50px;
@@ -221,54 +228,55 @@ h2:after {
     box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
 }
 
-#grid-team{
-    padding: 30px;
+#container-3{
+    display: flex;
+    position: relative;
+    margin: 30px;
+}
+
+#square{
+    position: relative;
+    margin: 20px;
+    margin-top: -7%;
+    max-width: 33%;
+    flex: 1;
+    padding: 30px; /* Espaçamento interno do quadrado */
     background-color: #303138;
-    width: 30%;
-    height: 500px;
-    margin-left: 110px;
-    margin-top: -150px;
 }
 
-#grid-team h3{
-    text-transform: uppercase;
-    font-size: 60px;
-    color: var(--text-color);
-} 
-
-#grid-team h4{
-    text-transform: uppercase;
-    margin-top: 320px;
-    margin-left: 20px;
-    font-size: 50px;
-    color: var(--base-color2)
-} 
-
-#grid-team h4:after {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 50px;
-	background: var(--text-color);
-	margin-top: -60px;
-    margin-left: -20px;
-    border-radius: 5px;
+#square h2 {
+    color: var(--base-color2);
+    font-size: 46px;
+    margin-top: 300px; 
+    margin-left: 12px;
+    margin-bottom: 10px; 
+    position: relative; /* Adiciona position relative para o posicionamento absoluto funcionar */
 }
 
-#grid-team h2{
+#square h2:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 50px;
+    background: var(--text-color);
+    position: absolute;
+    top: 0; /* Ajusta a posição do topo */
+    right: calc(100% + 10px); /* Posiciona à direita do texto, ajuste conforme necessário */
+}
+
+#text-container-3{
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+#text-container-3 h3{
     text-transform: uppercase;
-    color: var(--text-color);
     font-size: 64px;
-    margin-top: -350px;
-    margin-left: 33%;
+    margin-top: -10%;
 }
 
-#grid-team p{
-    color: var(--text-color);
-    font-size: 30px;
-    margin-top: -280px;
-    margin-left: 600px;
-    min-width: 1050px;
+#text-container-3 p{
+    font-size: 32px;
 }
 
 section{
@@ -280,7 +288,7 @@ section{
 
 .team-member{
     margin-top: 20px;
-    width: 55%;
+    width: 65%;
     background-color: #6CACBA;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -293,7 +301,6 @@ section{
     margin-top: 35px;
     margin-left: 25px;
 }
-
 
 footer {
     width: 100%;
